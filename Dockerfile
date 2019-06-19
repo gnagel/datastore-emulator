@@ -13,4 +13,4 @@ RUN apk add --update --no-cache openjdk8-jre && gcloud components install cloud-
 VOLUME /opt/data
 
 COPY start-datastore .
-ENTRYPOINT ["./start-datastore"]
+CMD ["./start-datastore"]
